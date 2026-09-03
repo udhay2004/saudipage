@@ -1,0 +1,283 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #071A2B;
+    --color-near-black: #05080C;
+    --color-royal: #123C69;
+    --color-emerald: #0B8F5A;
+    --color-ivory: #F4F1E8;
+    --color-light-grey: #E9ECEF;
+    --color-gold: #C8A45D;
+  }
+
+  body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #05080c;
+    color: #f4f1e8;
+  }
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-sans-luxury {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* Animations */
+@keyframes orbitClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitCounterClockwise {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes portalBreathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.018);
+  }
+}
+
+@keyframes lightSweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.65;
+  }
+  45% {
+    transform: translateX(250%) skewX(-25deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(250%) skewX(-25deg);
+    opacity: 0;
+  }
+}
+
+@keyframes floatDrift {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-12px, 16px) scale(1.08);
+  }
+}
+
+@keyframes windowFlicker {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.95;
+  }
+  70% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes windowFlicker2 {
+  0%, 100% {
+    opacity: 0.85;
+  }
+  40% {
+    opacity: 0.15;
+  }
+  85% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes routePulse {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Sweeping searchlight beams over Riyadh skyline */
+@keyframes searchlightSweepLeft {
+  0%, 100% {
+    transform: rotate(-25deg);
+    opacity: 0.15;
+  }
+  50% {
+    transform: rotate(18deg);
+    opacity: 0.55;
+  }
+}
+
+@keyframes searchlightSweepRight {
+  0%, 100% {
+    transform: rotate(20deg);
+    opacity: 0.45;
+  }
+  50% {
+    transform: rotate(-30deg);
+    opacity: 0.15;
+  }
+}
+
+/* Highway streaming traffic light lines */
+@keyframes highwayFlowEast {
+  0% {
+    stroke-dashoffset: 120;
+  }
+  100% {
+    stroke-dashoffset: -120;
+  }
+}
+
+@keyframes highwayFlowWest {
+  0% {
+    stroke-dashoffset: -120;
+  }
+  100% {
+    stroke-dashoffset: 120;
+  }
+}
+
+/* Luxury horology escapement oscillation (rapid 5Hz tick back-and-forth) */
+@keyframes escapementTick {
+  0%, 100% {
+    transform: rotate(-16deg);
+  }
+  50% {
+    transform: rotate(16deg);
+  }
+}
+
+/* Concentric radar ripple */
+@keyframes radarRipple {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+/* Shimmering luxury metallic gradient */
+@keyframes metallicShimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Golden border beam glow */
+@keyframes borderGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(200, 164, 93, 0.2), inset 0 0 15px rgba(200, 164, 93, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(200, 164, 93, 0.45), inset 0 0 25px rgba(11, 143, 90, 0.15);
+  }
+}
+
+.animate-searchlight-left {
+  animation: searchlightSweepLeft 9s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-searchlight-right {
+  animation: searchlightSweepRight 11s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-traffic-east {
+  animation: highwayFlowEast 2.2s linear infinite;
+}
+
+.animate-traffic-west {
+  animation: highwayFlowWest 2.6s linear infinite;
+}
+
+.animate-escapement {
+  animation: escapementTick 0.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-radar-ring {
+  animation: radarRipple 2.8s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+}
+
+.animate-shimmer-text {
+  background-size: 200% auto;
+  animation: metallicShimmer 6s linear infinite;
+}
+
+.animate-border-glow {
+  animation: borderGlowPulse 4s ease-in-out infinite;
+}
+
+.animate-orbit-12 {
+  animation: orbitClockwise 12s linear infinite;
+}
+
+.animate-orbit-16-reverse {
+  animation: orbitCounterClockwise 16s linear infinite;
+}
+
+.animate-orbit-20 {
+  animation: orbitClockwise 20s linear infinite;
+}
+
+.animate-portal-breathe {
+  animation: portalBreathe 6s ease-in-out infinite;
+}
+
+.animate-light-sweep {
+  animation: lightSweep 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-float-drift {
+  animation: floatDrift 14s ease-in-out infinite;
+}
+
+.animate-flicker-1 {
+  animation: windowFlicker 4s ease-in-out infinite;
+}
+
+.animate-flicker-2 {
+  animation: windowFlicker2 5.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
