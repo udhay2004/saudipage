@@ -31,7 +31,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-radial from-[#123c69]/25 via-[#071a2b]/10 to-transparent pointer-events-none filter blur-[110px]" />
       <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-radial from-[#0b8f5a]/15 to-transparent pointer-events-none filter blur-[95px]" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 w-full relative z-10">
         {/* Asymmetric 40% Left / 60% Right Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
@@ -50,7 +50,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Restrained Luxury Editorial Headline with subtle metallic shimmer */}
-            <h1 className="font-editorial text-3xl sm:text-4xl lg:text-[42px] font-normal leading-[1.12] tracking-tight text-[#f4f1e8] mb-4">
+            <h1 className="font-editorial text-2xl xs:text-3xl sm:text-4xl lg:text-[42px] font-normal leading-[1.12] tracking-tight text-[#f4f1e8] mb-4 break-words">
               YOUR GATEWAY TO <br />
               BUSINESS EXPANSION IN <br />
               <span className="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-[#c8a45d] via-[#f4f1e8] to-[#c8a45d] animate-shimmer-text">
@@ -59,7 +59,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </h1>
 
             {/* Short Supporting Message */}
-            <p className="text-sm sm:text-base text-[#f4f1e8]/75 leading-relaxed font-light mb-5 max-w-md">
+            <p className="text-xs sm:text-base text-[#f4f1e8]/75 leading-relaxed font-light mb-5 max-w-md">
               Practical, institutional guidance on licensing, corporate structuring, and establishing a thriving, compliant enterprise in the Kingdom of Saudi Arabia.
             </p>
 
@@ -91,11 +91,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Dominant Primary CTA */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <button
                 type="button"
                 onClick={onOpenReservation}
-                className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 text-xs font-semibold tracking-[0.28em] uppercase text-[#05080c] bg-[#f4f1e8] hover:bg-[#c8a45d] transition-all duration-300 shadow-[0_4px_24px_rgba(200,164,93,0.25)] hover:shadow-[0_6px_35px_rgba(200,164,93,0.45)] cursor-pointer overflow-hidden"
+                className="w-full sm:w-auto group relative inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 text-xs font-semibold tracking-[0.22em] sm:tracking-[0.28em] uppercase text-[#05080c] bg-[#f4f1e8] hover:bg-[#c8a45d] transition-all duration-300 shadow-[0_4px_24px_rgba(200,164,93,0.25)] hover:shadow-[0_6px_35px_rgba(200,164,93,0.45)] cursor-pointer overflow-hidden"
               >
                 {/* Button light sweep on hover */}
                 <span className="absolute inset-0 w-1/2 h-full bg-white/30 -skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-700 pointer-events-none" />
@@ -103,14 +103,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <ArrowRight className="relative z-10 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
 
-              <div className="flex items-center gap-2 text-[11px] text-[#f4f1e8]/60 font-mono-tech tracking-wide">
+              <div className="flex items-center justify-center sm:justify-start gap-2 text-[11px] text-[#f4f1e8]/60 font-mono-tech tracking-wide">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#0b8f5a]" />
                 <span>Complimentary · Limited Seats</span>
               </div>
             </div>
 
             {/* Institutional verification note */}
-            <div className="mt-5 pt-3 border-t border-white/5 flex items-center gap-6 text-[10px] font-mono-tech text-[#f4f1e8]/40 tracking-wider">
+            <div className="mt-5 pt-3 border-t border-white/5 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[10px] font-mono-tech text-[#f4f1e8]/40 tracking-wider">
               <span>MISA COMPLIANT</span>
               <span>·</span>
               <span>VISION 2030 ALIGNED</span>

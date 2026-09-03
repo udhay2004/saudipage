@@ -9,8 +9,8 @@ export const SessionDetailsSection: React.FC<SessionDetailsSectionProps> = ({
   onOpenReservation,
 }) => {
   return (
-    <section id="session" className="relative py-16 lg:py-20 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+    <section id="session" className="relative py-14 sm:py-16 lg:py-20 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         
         {/* Section Tag */}
         <div className="flex items-center gap-3 mb-6">
@@ -21,64 +21,64 @@ export const SessionDetailsSection: React.FC<SessionDetailsSectionProps> = ({
         </div>
 
         {/* Editorial Grid: Elegant Typography Layout (Not four giant cards) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           
           {/* Left Column: Massive Editorial Date & Details */}
           <div className="lg:col-span-7">
-            <h2 className="text-xs font-mono-tech tracking-[0.3em] uppercase text-[#f4f1e8]/50 mb-4">
+            <h2 className="text-xs font-mono-tech tracking-[0.3em] uppercase text-[#f4f1e8]/50 mb-3 sm:mb-4">
               EXECUTIVE SESSION BRIEFING
             </h2>
 
             {/* Date Display */}
-            <div className="font-editorial text-4xl sm:text-6xl lg:text-7xl text-[#f4f1e8] font-normal tracking-tight leading-[1.05] mb-6">
+            <div className="font-editorial text-3xl sm:text-5xl lg:text-7xl text-[#f4f1e8] font-normal tracking-tight leading-[1.05] mb-6 break-words">
               26 SEPTEMBER <br />
               <span className="italic text-[#c8a45d] font-light">2026</span>
             </div>
 
             {/* Refined Horizontal Editorial Specs */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-6 border-y border-white/10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 py-4 sm:py-6 border-y border-white/10">
               {/* Time */}
-              <div className="space-y-1">
+              <div className="space-y-1 min-w-0">
                 <div className="flex items-center gap-1.5 text-[10px] font-mono-tech tracking-wider uppercase text-[#c8a45d]">
-                  <Clock className="w-3.5 h-3.5" /> Time
+                  <Clock className="w-3.5 h-3.5 flex-shrink-0" /> Time
                 </div>
-                <div className="text-xl font-editorial text-[#f4f1e8]">
+                <div className="text-lg sm:text-xl font-editorial text-[#f4f1e8]">
                   3:30 PM IST
                 </div>
-                <div className="text-[11px] font-mono-tech text-[#f4f1e8]/50">
+                <div className="text-[10px] sm:text-[11px] font-mono-tech text-[#f4f1e8]/50">
                   1:00 PM AST (Riyadh)
                 </div>
               </div>
 
               {/* Format */}
-              <div className="space-y-1">
+              <div className="space-y-1 min-w-0">
                 <div className="flex items-center gap-1.5 text-[10px] font-mono-tech tracking-wider uppercase text-[#0b8f5a]">
-                  <Video className="w-3.5 h-3.5" /> Platform
+                  <Video className="w-3.5 h-3.5 flex-shrink-0" /> Platform
                 </div>
-                <div className="text-xl font-editorial text-[#f4f1e8]">
+                <div className="text-lg sm:text-xl font-editorial text-[#f4f1e8]">
                   LIVE ONLINE
                 </div>
-                <div className="text-[11px] font-mono-tech text-[#f4f1e8]/50">
+                <div className="text-[10px] sm:text-[11px] font-mono-tech text-[#f4f1e8]/50">
                   Private HD Broadcast + Q&A
                 </div>
               </div>
 
               {/* Access */}
-              <div className="space-y-1">
+              <div className="space-y-1 min-w-0">
                 <div className="flex items-center gap-1.5 text-[10px] font-mono-tech tracking-wider uppercase text-[#c8a45d]">
-                  <Award className="w-3.5 h-3.5" /> Tuition
+                  <Award className="w-3.5 h-3.5 flex-shrink-0" /> Tuition
                 </div>
-                <div className="text-xl font-editorial text-[#f4f1e8]">
+                <div className="text-lg sm:text-xl font-editorial text-[#f4f1e8]">
                   FREE SESSION
                 </div>
-                <div className="text-[11px] font-mono-tech text-[#f4f1e8]/50">
+                <div className="text-[10px] sm:text-[11px] font-mono-tech text-[#f4f1e8]/50">
                   By Pre-Registration
                 </div>
               </div>
             </div>
 
             {/* Time Zone Conversion Strip */}
-            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-[11px] font-mono-tech text-[#f4f1e8]/50">
+            <div className="mt-4 sm:mt-6 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[10px] sm:text-[11px] font-mono-tech text-[#f4f1e8]/50">
               <span className="text-[#c8a45d]">GLOBAL TIMEZONES:</span>
               <span>15:30 New Delhi (IST)</span>
               <span>·</span>
@@ -92,8 +92,8 @@ export const SessionDetailsSection: React.FC<SessionDetailsSectionProps> = ({
 
           {/* Right Column: Reservation & Calendar Actions */}
           <div className="lg:col-span-5 flex flex-col justify-center">
-            <div className="p-8 sm:p-10 rounded-2xl border border-[#c8a45d]/30 bg-[#071a2b]/40 backdrop-blur-md shadow-[0_20px_60px_rgba(5,8,12,0.8)]">
-              <h3 className="font-editorial text-2xl text-[#f4f1e8] mb-2 font-normal">
+            <div className="p-5 sm:p-8 lg:p-10 rounded-2xl border border-[#c8a45d]/30 bg-[#071a2b]/40 backdrop-blur-md shadow-[0_20px_60px_rgba(5,8,12,0.8)]">
+              <h3 className="font-editorial text-xl sm:text-2xl text-[#f4f1e8] mb-2 font-normal">
                 Strictly Limited Executive Cohort
               </h3>
               <p className="text-xs text-[#f4f1e8]/70 font-light leading-relaxed mb-6">
@@ -104,14 +104,14 @@ export const SessionDetailsSection: React.FC<SessionDetailsSectionProps> = ({
               <button
                 type="button"
                 onClick={onOpenReservation}
-                className="w-full group inline-flex items-center justify-center gap-3 py-4 text-xs font-semibold tracking-[0.25em] uppercase text-[#05080c] bg-[#c8a45d] hover:bg-[#f4f1e8] transition-all duration-300 shadow-[0_4px_24px_rgba(200,164,93,0.3)] cursor-pointer"
+                className="w-full group inline-flex items-center justify-center gap-3 py-3.5 sm:py-4 text-xs font-semibold tracking-[0.25em] uppercase text-[#05080c] bg-[#c8a45d] hover:bg-[#f4f1e8] transition-all duration-300 shadow-[0_4px_24px_rgba(200,164,93,0.3)] cursor-pointer"
               >
                 <span>Reserve Your Place</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
 
               {/* Assurance note */}
-              <div className="mt-5 pt-4 border-t border-white/10 text-center text-[10px] font-mono-tech text-[#f4f1e8]/40">
+              <div className="mt-4 sm:mt-5 pt-4 border-t border-white/10 text-center text-[10px] font-mono-tech text-[#f4f1e8]/40">
                 A calendar invite with live session link will be sent immediately.
               </div>
             </div>

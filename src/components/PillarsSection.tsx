@@ -59,7 +59,7 @@ export const PillarsSection: React.FC = () => {
   const currentPillar = pillars.find((p) => p.id === activePillar) || pillars[0];
 
   return (
-    <section id="agenda" className="relative py-16 lg:py-20 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
+    <section id="agenda" className="relative py-14 sm:py-16 lg:py-20 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
       {/* Dark Architectural Grid Map Backdrop */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -85,26 +85,26 @@ export const PillarsSection: React.FC = () => {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         
         {/* Section Header */}
-        <div className="pb-12 mb-12 border-b border-white/10 max-w-3xl">
+        <div className="pb-8 sm:pb-12 mb-8 sm:mb-12 border-b border-white/10 max-w-3xl">
           <div className="inline-flex items-center gap-2 mb-3">
             <Compass className="w-3.5 h-3.5 text-[#c8a45d]" />
             <span className="text-[10px] tracking-[0.3em] uppercase text-[#c8a45d] font-mono-tech">
               SECTION 02 · WEBINAR AGENDA & KEY TAKEAWAYS
             </span>
           </div>
-          <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-[#f4f1e8] font-normal leading-tight">
+          <h2 className="font-editorial text-2xl sm:text-4xl lg:text-5xl text-[#f4f1e8] font-normal leading-tight">
             WEBINAR AGENDA & KEY TAKEAWAYS
           </h2>
-          <p className="mt-4 text-sm text-[#f4f1e8]/65 font-light leading-relaxed">
+          <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-[#f4f1e8]/65 font-light leading-relaxed">
             Four interconnected strategic disciplines. Every minute of this executive webinar is calibrated to deliver actionable tactical advantage, statutory clarity, and execution templates.
           </p>
         </div>
 
         {/* The 4 Dominant Sequential Words */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 mb-8 sm:mb-10">
           {pillars.map((item, idx) => {
             const isSelected = activePillar === item.id;
             return (
@@ -112,26 +112,26 @@ export const PillarsSection: React.FC = () => {
                 key={item.id}
                 type="button"
                 onClick={() => setActivePillar(item.id)}
-                className={`group text-left p-4 sm:p-6 transition-all duration-300 border rounded-lg cursor-pointer ${
+                className={`group text-left p-3 sm:p-5 lg:p-6 transition-all duration-300 border rounded-lg cursor-pointer min-w-0 overflow-hidden ${
                   isSelected
-                    ? 'bg-[#071a2b] border-[#c8a45d] shadow-[0_0_25px_rgba(200,164,93,0.15)]'
+                    ? 'bg-[#071a2b] border-[#c8a45d] shadow-[0_0_25px_rgba(200,164,93,0.15)] ring-1 ring-[#c8a45d]/40'
                     : 'bg-[#05080c]/60 border-white/10 hover:border-white/20'
                 }`}
               >
-                <div className="flex items-center justify-between text-[10px] font-mono-tech mb-2">
-                  <span className={isSelected ? 'text-[#c8a45d]' : 'text-white/40'}>
+                <div className="flex items-center justify-between text-[10px] font-mono-tech mb-1.5 sm:mb-2">
+                  <span className={isSelected ? 'text-[#c8a45d] font-semibold' : 'text-white/40'}>
                     0{idx + 1}
                   </span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#0b8f5a]" />
+                  <span className={`w-1.5 h-1.5 rounded-full ${isSelected ? 'bg-[#c8a45d]' : 'bg-[#0b8f5a]'}`} />
                 </div>
                 <div
-                  className={`font-editorial text-2xl sm:text-3xl tracking-wide font-normal transition-colors ${
+                  className={`font-editorial text-base sm:text-xl md:text-2xl lg:text-3xl font-normal leading-tight tracking-tight sm:tracking-normal transition-colors break-words ${
                     isSelected ? 'text-[#f4f1e8]' : 'text-[#f4f1e8]/60 group-hover:text-[#f4f1e8]'
                   }`}
                 >
                   {item.title}
                 </div>
-                <div className="text-[11px] font-mono-tech text-[#c8a45d]/70 mt-1 truncate">
+                <div className="text-[10px] sm:text-[11px] font-mono-tech text-[#c8a45d]/80 mt-1 leading-snug break-words">
                   {item.subtitle}
                 </div>
               </button>
@@ -140,33 +140,33 @@ export const PillarsSection: React.FC = () => {
         </div>
 
         {/* Active Pillar Deep Architectural Blueprint */}
-        <div className="p-8 sm:p-12 rounded-xl border border-[#c8a45d]/20 bg-[#071a2b]/30 backdrop-blur-md">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="p-4 sm:p-8 lg:p-12 rounded-xl border border-[#c8a45d]/20 bg-[#071a2b]/30 backdrop-blur-md">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
             
             {/* Left Column: Scope & Rationale */}
-            <div className="lg:col-span-5 space-y-4">
+            <div className="lg:col-span-5 space-y-3 sm:space-y-4">
               <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded border border-[#c8a45d]/30 text-[10px] font-mono-tech text-[#c8a45d] uppercase tracking-wider">
                 Strategic Focus Area
               </div>
-              <h3 className="font-editorial text-3xl sm:text-4xl text-[#f4f1e8]">
+              <h3 className="font-editorial text-2xl sm:text-3xl lg:text-4xl text-[#f4f1e8] font-normal leading-tight break-words">
                 {currentPillar.title} · {currentPillar.subtitle}
               </h3>
-              <p className="text-sm text-[#f4f1e8]/75 font-light leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#f4f1e8]/75 font-light leading-relaxed">
                 {currentPillar.description}
               </p>
 
-              <div className="pt-4 flex items-center gap-3 text-xs font-mono-tech text-[#0b8f5a]">
-                <CheckCircle2 className="w-4 h-4" />
+              <div className="pt-2 sm:pt-4 flex items-center gap-2.5 text-xs font-mono-tech text-[#0b8f5a]">
+                <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                 <span>Includes real-case templates and workflow flowcharts</span>
               </div>
             </div>
 
             {/* Right Column: Key Deliverables for This Pillar */}
-            <div className="lg:col-span-7 bg-[#05080c]/80 border border-white/5 p-6 sm:p-8 rounded-lg">
-              <div className="text-[11px] font-mono-tech text-[#c8a45d] uppercase tracking-widest mb-4">
+            <div className="lg:col-span-7 bg-[#05080c]/80 border border-white/5 p-4 sm:p-6 lg:p-8 rounded-lg">
+              <div className="text-[10px] sm:text-[11px] font-mono-tech text-[#c8a45d] uppercase tracking-widest mb-3 sm:mb-4">
                 Specific In-Depth Topics Covered
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {currentPillar.focusAreas.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <div className="w-5 h-5 rounded border border-[#c8a45d]/30 flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-mono-tech text-[#c8a45d]">
@@ -184,33 +184,33 @@ export const PillarsSection: React.FC = () => {
         </div>
 
         {/* Executive Key Takeaways Summary Banner */}
-        <div className="mt-10 p-6 sm:p-8 rounded-xl border border-[#c8a45d]/20 bg-[#071a2b]/40 backdrop-blur-md">
+        <div className="mt-8 sm:mt-10 p-4 sm:p-6 lg:p-8 rounded-xl border border-[#c8a45d]/20 bg-[#071a2b]/40 backdrop-blur-md">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <div className="text-[10px] font-mono-tech tracking-[0.3em] uppercase text-[#c8a45d] mb-1.5">
                 EXECUTIVE DELIVERABLES
               </div>
-              <h3 className="font-editorial text-2xl text-[#f4f1e8] font-normal">
+              <h3 className="font-editorial text-xl sm:text-2xl text-[#f4f1e8] font-normal">
                 What You Walk Away With
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 flex-1">
-              <div className="p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 flex-1">
+              <div className="p-3 sm:p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1 min-w-0">
                 <span className="text-[10px] font-mono-tech text-[#c8a45d] block">01 · CHECKLIST</span>
-                <span className="text-xs text-[#f4f1e8]/90 font-medium block">MISA & CR Fast-Track Filing Checklist</span>
+                <span className="text-xs text-[#f4f1e8]/90 font-medium block leading-snug">MISA & CR Fast-Track Filing Checklist</span>
               </div>
-              <div className="p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1">
+              <div className="p-3 sm:p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1 min-w-0">
                 <span className="text-[10px] font-mono-tech text-[#0b8f5a] block">02 · TEMPLATE</span>
-                <span className="text-xs text-[#f4f1e8]/90 font-medium block">Articles of Association (AoA) Structuring Model</span>
+                <span className="text-xs text-[#f4f1e8]/90 font-medium block leading-snug">Articles of Association (AoA) Structuring Model</span>
               </div>
-              <div className="p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1">
+              <div className="p-3 sm:p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1 min-w-0">
                 <span className="text-[10px] font-mono-tech text-[#c8a45d] block">03 · COMPLIANCE</span>
-                <span className="text-xs text-[#f4f1e8]/90 font-medium block">ZATCA, Fatoora & Saudization Calendar</span>
+                <span className="text-xs text-[#f4f1e8]/90 font-medium block leading-snug">ZATCA, Fatoora & Saudization Calendar</span>
               </div>
-              <div className="p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1">
+              <div className="p-3 sm:p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1 min-w-0">
                 <span className="text-[10px] font-mono-tech text-[#0b8f5a] block">04 · DIRECT ACCESS</span>
-                <span className="text-xs text-[#f4f1e8]/90 font-medium block">Live Q&A with Dr. Anil Gupta</span>
+                <span className="text-xs text-[#f4f1e8]/90 font-medium block leading-snug">Live Q&A with Dr. Anil Gupta</span>
               </div>
             </div>
           </div>

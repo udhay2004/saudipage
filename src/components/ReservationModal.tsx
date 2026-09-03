@@ -71,18 +71,18 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({ isOpen, onCl
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full text-[#f4f1e8]/50 hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
+          className="absolute top-3 right-3 sm:top-5 sm:right-5 p-2 rounded-full text-[#f4f1e8]/50 hover:text-white hover:bg-white/5 transition-colors cursor-pointer z-10"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="p-6 sm:p-10">
+        <div className="p-4 sm:p-8 lg:p-10">
           {!submitted ? (
             <div>
               {/* Header */}
               <div className="flex items-center gap-2 text-[10px] font-mono-tech tracking-[0.3em] uppercase text-[#c8a45d] mb-2">
-                <KeyRound className="w-3.5 h-3.5" />
+                <KeyRound className="w-3.5 h-3.5 flex-shrink-0" />
                 <span>EXECUTIVE RESERVATION</span>
               </div>
               <h3 className="font-editorial text-2xl sm:text-3xl text-[#f4f1e8] font-normal mb-2">
@@ -225,9 +225,9 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({ isOpen, onCl
               </div>
 
               {/* Bespoke VIP Digital Pass */}
-              <div className="relative rounded-xl border border-[#c8a45d]/40 bg-[#05080c] p-6 text-left shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
+              <div className="relative rounded-xl border border-[#c8a45d]/40 bg-[#05080c] p-4 sm:p-6 text-left shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
                 {/* Header of pass */}
-                <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
+                <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-4 gap-2">
                   <div>
                     <span className="font-display tracking-[0.2em] text-xs font-semibold text-[#f4f1e8]">
                       COMPLY GLOBALLY
@@ -236,8 +236,8 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({ isOpen, onCl
                       OFFICIAL EXECUTIVE PASS
                     </span>
                   </div>
-                  <div className="text-right">
-                    <span className="font-mono-tech text-xs text-[#c8a45d] font-bold">
+                  <div className="text-right flex-shrink-0">
+                    <span className="font-mono-tech text-[11px] sm:text-xs text-[#c8a45d] font-bold">
                       #CG-KSA-2026-8941
                     </span>
                     <span className="block text-[8px] font-mono-tech text-[#0b8f5a]">
@@ -252,13 +252,13 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({ isOpen, onCl
                     <span className="text-[10px] font-mono-tech uppercase tracking-wider text-white/40 block">
                       Attendee
                     </span>
-                    <span className="text-[#f4f1e8] font-semibold">
+                    <span className="text-[#f4f1e8] font-semibold break-words">
                       {formData.fullName || 'Executive Guest'}
                     </span>
-                    <span className="text-white/50 text-[11px]"> · {formData.designation}, {formData.companyName}</span>
+                    <span className="text-white/50 text-[11px] break-words"> · {formData.designation}, {formData.companyName}</span>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4 pt-2 border-t border-white/5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2 border-t border-white/5">
                     <div>
                       <span className="text-[10px] font-mono-tech uppercase tracking-wider text-white/40 block">
                         Date & Time

@@ -3,11 +3,11 @@ import { KeyRound, ShieldCheck } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#05080c] border-t border-[#c8a45d]/15 pt-16 pb-12 text-[#f4f1e8]/60">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <footer className="bg-[#05080c] border-t border-[#c8a45d]/15 pt-12 sm:pt-16 pb-10 sm:pb-12 text-[#f4f1e8]/60">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         
         {/* Main Footer Row */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 pb-10 sm:pb-12 border-b border-white/10">
           
           {/* Brand & Mission */}
           <div className="md:col-span-5 space-y-4">

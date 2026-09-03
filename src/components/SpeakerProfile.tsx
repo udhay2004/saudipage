@@ -3,8 +3,8 @@ import { Award, Briefcase, Globe2, Sparkles, CheckCircle2 } from 'lucide-react';
 
 export const SpeakerProfile: React.FC = () => {
   return (
-    <section id="speaker" className="relative py-16 lg:py-20 bg-[#071a2b]/20 border-t border-[#c8a45d]/15 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+    <section id="speaker" className="relative py-14 sm:py-16 lg:py-20 bg-[#071a2b]/20 border-t border-[#c8a45d]/15 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         
         {/* Section Header */}
         <div className="flex items-center gap-3 mb-6">
@@ -15,14 +15,14 @@ export const SpeakerProfile: React.FC = () => {
         </div>
 
         {/* Sophisticated Editorial Profile Composition (No generic circular card!) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           
           {/* Left: Speaker Portrait Composition with Architectural Framing */}
           <div className="lg:col-span-5 relative">
             <div className="relative p-1 rounded-xl bg-gradient-to-b from-[#c8a45d]/40 via-[#123c69]/30 to-transparent">
               <div className="relative rounded-lg overflow-hidden bg-[#071a2b] border border-white/10 shadow-[0_20px_50px_rgba(5,8,12,0.9)]">
                 {/* Stylized Architectural Executive Portrait Canvas */}
-                <div className="relative w-full h-[380px] sm:h-[440px] bg-gradient-to-br from-[#0a233a] via-[#071a2b] to-[#05080c] flex flex-col justify-end p-8 overflow-hidden">
+                <div className="relative w-full h-[320px] sm:h-[440px] bg-gradient-to-br from-[#0a233a] via-[#071a2b] to-[#05080c] flex flex-col justify-end p-4 sm:p-8 overflow-hidden">
                   
                   {/* Subtle Geometric Skyline Silhouette in background */}
                   <svg className="absolute top-0 right-0 w-full h-full opacity-15 pointer-events-none" viewBox="0 0 300 300">
@@ -31,28 +31,28 @@ export const SpeakerProfile: React.FC = () => {
                   </svg>
 
                   {/* Sophisticated Monogram Silhouette & Lighting Accent */}
-                  <div className="absolute top-8 left-8 w-16 h-16 rounded-full border border-[#c8a45d]/40 flex items-center justify-center bg-[#05080c]/60 backdrop-blur-md">
-                    <span className="font-editorial text-2xl text-[#c8a45d] italic">AG</span>
+                  <div className="absolute top-4 left-4 sm:top-8 sm:left-8 w-12 h-12 sm:w-16 sm:h-16 rounded-full border border-[#c8a45d]/40 flex items-center justify-center bg-[#05080c]/60 backdrop-blur-md">
+                    <span className="font-editorial text-lg sm:text-2xl text-[#c8a45d] italic">AG</span>
                   </div>
 
                   {/* Luminous Light Sweep Across Frame */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#f4f1e8]/5 to-transparent pointer-events-none" />
 
                   {/* Floating Credentials Overlay Card */}
-                  <div className="relative z-10 p-5 rounded-lg bg-[#05080c]/90 border border-[#c8a45d]/30 backdrop-blur-md">
+                  <div className="relative z-10 p-3.5 sm:p-5 rounded-lg bg-[#05080c]/90 border border-[#c8a45d]/30 backdrop-blur-md">
                     <div className="flex items-center justify-between text-[10px] font-mono-tech text-[#c8a45d] mb-1 tracking-wider uppercase">
                       <span>Verified Speaker</span>
                       <span className="flex items-center gap-1 text-[#0b8f5a]">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#0b8f5a]" /> Live Host
                       </span>
                     </div>
-                    <div className="font-editorial text-2xl sm:text-3xl text-[#f4f1e8]">
+                    <div className="font-editorial text-xl sm:text-3xl text-[#f4f1e8]">
                       Dr. Anil Gupta
                     </div>
-                    <div className="text-xs font-mono-tech text-[#f4f1e8]/85 tracking-wide mt-1">
+                    <div className="text-[11px] sm:text-xs font-mono-tech text-[#f4f1e8]/85 tracking-wide mt-0.5 sm:mt-1">
                       Chairman, Business Coach & Advisor
                     </div>
-                    <div className="text-[11px] font-mono-tech text-[#c8a45d]/85 mt-0.5">
+                    <div className="text-[10px] sm:text-[11px] font-mono-tech text-[#c8a45d]/85 mt-0.5">
                       Comply Globally
                     </div>
                   </div>
@@ -61,44 +61,44 @@ export const SpeakerProfile: React.FC = () => {
             </div>
 
             {/* Quick Metrics Bar Under Portrait */}
-            <div className="mt-4 grid grid-cols-3 gap-2 text-center text-[10px] font-mono-tech border border-white/10 p-3 rounded-lg bg-[#05080c]/60">
+            <div className="mt-4 grid grid-cols-3 gap-2 text-center text-[10px] font-mono-tech border border-white/10 p-2.5 sm:p-3 rounded-lg bg-[#05080c]/60">
               <div>
-                <div className="text-[#c8a45d] font-bold text-sm">180+</div>
-                <div className="text-white/40">Entities Advised</div>
+                <div className="text-[#c8a45d] font-bold text-xs sm:text-sm">180+</div>
+                <div className="text-white/40 text-[9px] sm:text-[10px]">Entities Advised</div>
               </div>
               <div className="border-x border-white/10">
-                <div className="text-[#0b8f5a] font-bold text-sm">22+ Yrs</div>
-                <div className="text-white/40">Cross-Border Law</div>
+                <div className="text-[#0b8f5a] font-bold text-xs sm:text-sm">22+ Yrs</div>
+                <div className="text-white/40 text-[9px] sm:text-[10px]">Cross-Border Law</div>
               </div>
               <div>
-                <div className="text-[#f4f1e8] font-bold text-sm">$850M+</div>
-                <div className="text-white/40">FDI Facilitated</div>
+                <div className="text-[#f4f1e8] font-bold text-xs sm:text-sm">$850M+</div>
+                <div className="text-white/40 text-[9px] sm:text-[10px]">FDI Facilitated</div>
               </div>
             </div>
           </div>
 
           {/* Right: Distinguished Biography & Executive Perspective */}
-          <div className="lg:col-span-7 flex flex-col justify-center space-y-6">
+          <div className="lg:col-span-7 flex flex-col justify-center space-y-5 sm:space-y-6">
             <div>
               <div className="text-xs font-mono-tech text-[#c8a45d] tracking-[0.25em] uppercase mb-2">
                 Executive Profile
               </div>
-              <h3 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-[#f4f1e8] font-normal leading-tight">
+              <h3 className="font-editorial text-2xl sm:text-4xl lg:text-5xl text-[#f4f1e8] font-normal leading-tight break-words">
                 Authoritative Guidance From the Frontlines of Saudi Reform
               </h3>
             </div>
 
-            <p className="text-sm sm:text-base text-[#f4f1e8]/80 font-light leading-relaxed">
+            <p className="text-xs sm:text-base text-[#f4f1e8]/80 font-light leading-relaxed">
               Dr. Anil Gupta is widely regarded as one of the preeminent cross-border establishment counsel connecting Indian industry with the GCC. Over two decades, he has guided multinational boards, technology ventures, EPC infrastructure giants, and family offices in navigating MISA licensing, corporate structuring, and regulatory clearance.
             </p>
 
-            <p className="text-sm text-[#f4f1e8]/65 font-light leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#f4f1e8]/65 font-light leading-relaxed">
               Having represented foreign enterprises through the transition from SAGIA to MISA, and through the landmark implementation of the New Saudi Companies Law, Dr. Gupta delivers unfiltered, pragmatic intelligence directly applicable to your business.
             </p>
 
             {/* Key Areas of Direct Inquiry During Live Q&A */}
             <div className="pt-4 border-t border-white/10 space-y-3">
-              <div className="text-[11px] font-mono-tech uppercase tracking-widest text-[#c8a45d]">
+              <div className="text-[10px] sm:text-[11px] font-mono-tech uppercase tracking-widest text-[#c8a45d]">
                 Specialized Inquiries Addressed in This Session
               </div>
 
@@ -123,10 +123,10 @@ export const SpeakerProfile: React.FC = () => {
             </div>
 
             {/* Direct Question Invitation */}
-            <div className="p-4 rounded-lg bg-[#071a2b]/60 border border-[#c8a45d]/20 text-xs text-[#f4f1e8]/70 font-light flex items-center justify-between">
+            <div className="p-3.5 sm:p-4 rounded-lg bg-[#071a2b]/60 border border-[#c8a45d]/20 text-xs text-[#f4f1e8]/70 font-light flex items-center justify-between">
               <span className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-[#c8a45d]" />
-                Attendees will have direct microphone and chat access to Dr. Gupta during the open Q&A.
+                <Sparkles className="w-4 h-4 text-[#c8a45d] flex-shrink-0" />
+                <span>Attendees will have direct microphone and chat access to Dr. Gupta during the open Q&A.</span>
               </span>
             </div>
           </div>

@@ -111,17 +111,17 @@ export const TimeMechanismDial: React.FC = () => {
       </div>
 
       {/* Time Readings */}
-      <div className="flex flex-col justify-center border-l border-[#c8a45d]/25 pl-4 py-0.5 space-y-1">
-        <div className="flex items-center gap-1.5 text-[10px] font-mono-tech tracking-[0.25em] uppercase text-[#c8a45d]">
-          <Clock className="w-3 h-3 text-[#c8a45d]" />
-          <span>CURRENT TIME</span>
+      <div className="flex flex-col justify-center border-l border-[#c8a45d]/25 pl-3 sm:pl-4 py-0.5 space-y-1 min-w-0">
+        <div className="flex items-center gap-1.5 text-[9px] sm:text-[10px] font-mono-tech tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[#c8a45d]">
+          <Clock className="w-3 h-3 text-[#c8a45d] flex-shrink-0" />
+          <span className="truncate">CURRENT TIME</span>
         </div>
-        <div className="text-xl sm:text-2xl font-editorial tracking-tight text-[#f4f1e8] font-normal leading-none">
+        <div className="text-lg sm:text-2xl font-editorial tracking-tight text-[#f4f1e8] font-normal leading-none truncate">
           {localTimeStr}
         </div>
-        <div className="text-[11px] font-mono-tech text-[#0b8f5a] flex items-center gap-1">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#0b8f5a] animate-pulse" />
-          <span>Riyadh: {riyadhTimeStr} AST</span>
+        <div className="text-[10px] sm:text-[11px] font-mono-tech text-[#0b8f5a] flex items-center gap-1 min-w-0">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#0b8f5a] animate-pulse flex-shrink-0" />
+          <span className="truncate">Riyadh: {riyadhTimeStr} AST</span>
         </div>
       </div>
     </div>

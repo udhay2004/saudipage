@@ -36,40 +36,40 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenReservat
         <div className="absolute w-[560px] h-[560px] rounded-full border border-[#c8a45d]/10 animate-orbit-20" />
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         
         {/* Monogram / Key Emblem */}
-        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#c8a45d]/50 bg-[#071a2b]/80 backdrop-blur-md mb-8 shadow-[0_0_25px_rgba(200,164,93,0.2)]">
+        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#c8a45d]/50 bg-[#071a2b]/80 backdrop-blur-md mb-6 sm:mb-8 shadow-[0_0_25px_rgba(200,164,93,0.2)]">
           <KeyRound className="w-5 h-5 text-[#c8a45d]" />
         </div>
 
         {/* Small Eyebrow */}
-        <div className="text-[11px] font-mono-tech tracking-[0.35em] uppercase text-[#c8a45d] mb-4">
+        <div className="text-[10px] sm:text-[11px] font-mono-tech tracking-[0.25em] sm:tracking-[0.35em] uppercase text-[#c8a45d] mb-3 sm:mb-4">
           EXCLUSIVE EXECUTIVE INVITATION
         </div>
 
         {/* Headline */}
-        <h2 className="font-editorial text-3xl sm:text-5xl lg:text-6xl text-[#f4f1e8] font-normal leading-tight tracking-tight mb-4">
-          YOUR NEXT MARKET COULD BE <br />
+        <h2 className="font-editorial text-2xl sm:text-5xl lg:text-6xl text-[#f4f1e8] font-normal leading-tight tracking-tight mb-3 sm:mb-4 break-words">
+          YOUR NEXT MARKET COULD BE <br className="hidden sm:inline" />
           <span className="italic text-[#c8a45d]">SAUDI ARABIA.</span>
         </h2>
 
         {/* Sub-headline */}
-        <div className="font-editorial text-2xl sm:text-3xl text-[#f4f1e8]/80 font-light tracking-wide mb-8">
+        <div className="font-editorial text-lg sm:text-3xl text-[#f4f1e8]/80 font-light tracking-wide mb-6 sm:mb-8">
           UNLOCK THE OPPORTUNITY.
         </div>
 
         {/* Short context */}
-        <p className="max-w-xl mx-auto text-sm text-[#f4f1e8]/65 font-light leading-relaxed mb-10">
+        <p className="max-w-xl mx-auto text-xs sm:text-sm text-[#f4f1e8]/65 font-light leading-relaxed mb-8 sm:mb-10">
           Join C-suite peers, founders, and international expansion directors for an unfiltered, step-by-step masterclass on Saudi entity establishment.
         </p>
 
         {/* Dominant Primary CTA */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
           <button
             type="button"
             onClick={onOpenReservation}
-            className="group inline-flex items-center justify-center gap-3 px-10 py-4 text-xs font-semibold tracking-[0.28em] uppercase text-[#05080c] bg-[#f4f1e8] hover:bg-[#c8a45d] transition-all duration-300 shadow-[0_8px_32px_rgba(200,164,93,0.35)] cursor-pointer"
+            className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-3.5 sm:py-4 text-xs font-semibold tracking-[0.2em] sm:tracking-[0.28em] uppercase text-[#05080c] bg-[#f4f1e8] hover:bg-[#c8a45d] transition-all duration-300 shadow-[0_8px_32px_rgba(200,164,93,0.35)] cursor-pointer"
           >
             <span>Reserve Your Place</span>
             <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -77,17 +77,17 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenReservat
         </div>
 
         {/* Session reminder metadata */}
-        <div className="mt-10 pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 text-[11px] font-mono-tech text-[#f4f1e8]/50">
+        <div className="mt-8 sm:mt-10 pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-[10px] sm:text-[11px] font-mono-tech text-[#f4f1e8]/50">
           <span className="flex items-center gap-1.5 text-[#f4f1e8]">
-            <Sparkles className="w-3.5 h-3.5 text-[#c8a45d]" /> 26 SEPTEMBER 2026
+            <Sparkles className="w-3.5 h-3.5 text-[#c8a45d] flex-shrink-0" /> 26 SEPTEMBER 2026
           </span>
-          <span>·</span>
+          <span className="hidden sm:inline">·</span>
           <span>3:30 PM IST (13:00 AST)</span>
-          <span>·</span>
+          <span className="hidden sm:inline">·</span>
           <span>LIVE ONLINE EXECUTIVE ROOM</span>
-          <span>·</span>
+          <span className="hidden sm:inline">·</span>
           <span className="text-[#0b8f5a] flex items-center gap-1">
-            <ShieldCheck className="w-3.5 h-3.5" /> COMPLIMENTARY REGISTRATION
+            <ShieldCheck className="w-3.5 h-3.5 flex-shrink-0" /> COMPLIMENTARY REGISTRATION
           </span>
         </div>
 
