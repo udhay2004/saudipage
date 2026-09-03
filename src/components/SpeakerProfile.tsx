@@ -3,7 +3,7 @@ import { Award, Briefcase, Globe2, Sparkles, CheckCircle2 } from 'lucide-react';
 
 export const SpeakerProfile: React.FC = () => {
   return (
-    <section id="speaker" className="relative py-24 lg:py-32 bg-[#071a2b]/20 border-t border-[#c8a45d]/15 overflow-hidden">
+    <section id="speaker" className="relative py-16 lg:py-20 bg-[#071a2b]/20 border-t border-[#c8a45d]/15 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         
         {/* Section Header */}
