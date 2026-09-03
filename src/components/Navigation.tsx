@@ -21,8 +21,8 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenReservation }) => 
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#05080c]/95 backdrop-blur-md border-b border-[#c8a45d]/20 py-3.5 shadow-[0_10px_30px_rgba(0,0,0,0.8)]'
-          : 'bg-transparent py-5 lg:py-7'
+          ? 'bg-[#05080c]/95 backdrop-blur-md border-b border-[#c8a45d]/20 py-2.5 shadow-[0_10px_30px_rgba(0,0,0,0.8)]'
+          : 'bg-transparent py-3.5 lg:py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
