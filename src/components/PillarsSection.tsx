@@ -59,7 +59,7 @@ export const PillarsSection: React.FC = () => {
   const currentPillar = pillars.find((p) => p.id === activePillar) || pillars[0];
 
   return (
-    <section className="relative py-24 lg:py-32 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
+    <section className="relative py-16 lg:py-20 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
       {/* Dark Architectural Grid Map Backdrop */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
