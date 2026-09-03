@@ -15,7 +15,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onExploreClick,
 }) => {
   return (
-    <section className="relative min-h-screen pt-24 pb-14 lg:pt-28 lg:pb-16 flex items-center overflow-hidden bg-[#05080c]">
+    <section className="relative min-h-screen pt-20 pb-8 lg:pt-24 lg:pb-10 flex items-center overflow-hidden bg-[#05080c]">
       {/* Real-time Interactive Starlight & Constellation Canvas */}
       <AtmosphericParticlesCanvas />
 
@@ -33,12 +33,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full relative z-10">
         {/* Asymmetric 40% Left / 60% Right Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
           {/* LEFT COLUMN: ~40-45% (5 cols on lg) */}
           <div className="lg:col-span-5 flex flex-col justify-center max-w-xl">
             {/* Small Elegant Eyebrow with pulsing emerald dot */}
-            <div className="inline-flex items-center gap-2 mb-4">
+            <div className="inline-flex items-center gap-2 mb-3">
               <span className="w-4 h-px bg-[#c8a45d]" />
               <span className="text-[11px] font-mono-tech tracking-[0.3em] uppercase text-[#c8a45d] flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0b8f5a] animate-ping" />
@@ -50,7 +50,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Restrained Luxury Editorial Headline with subtle metallic shimmer */}
-            <h1 className="font-editorial text-4xl sm:text-5xl lg:text-[54px] font-normal leading-[1.08] tracking-tight text-[#f4f1e8] mb-5">
+            <h1 className="font-editorial text-4xl sm:text-5xl lg:text-[46px] font-normal leading-[1.08] tracking-tight text-[#f4f1e8] mb-4">
               YOUR KEY TO <br />
               <span className="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-[#c8a45d] via-[#f4f1e8] to-[#c8a45d] animate-shimmer-text">
                 SAUDI ARABIA
@@ -58,12 +58,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </h1>
 
             {/* Short Supporting Message */}
-            <p className="text-sm sm:text-base text-[#f4f1e8]/75 leading-relaxed font-light mb-7 max-w-md">
+            <p className="text-sm sm:text-base text-[#f4f1e8]/75 leading-relaxed font-light mb-5 max-w-md">
               Practical, institutional guidance on entering, licensing, and establishing a lasting commercial presence in the Kingdom of Saudi Arabia.
             </p>
 
             {/* 3:30 DIAL & DATE/TIME MECHANISM */}
-            <div className="mb-6 border-y border-[#c8a45d]/15 py-3">
+            <div className="mb-4 border-y border-[#c8a45d]/15 py-2.5">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <TimeMechanismDial />
                 <div className="hidden sm:flex flex-col justify-center text-right border-l border-white/5 pl-4">
@@ -82,7 +82,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Restrained Live Countdown */}
-            <div className="mb-7">
+            <div className="mb-5">
               <div className="text-[10px] tracking-[0.25em] uppercase text-[#f4f1e8]/50 font-mono-tech mb-1.5 flex items-center gap-1.5">
                 <Sparkles className="w-3 h-3 text-[#c8a45d]" /> Session Countdown
               </div>
@@ -109,7 +109,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Institutional verification note */}
-            <div className="mt-8 pt-4 border-t border-white/5 flex items-center gap-6 text-[10px] font-mono-tech text-[#f4f1e8]/40 tracking-wider">
+            <div className="mt-5 pt-3 border-t border-white/5 flex items-center gap-6 text-[10px] font-mono-tech text-[#f4f1e8]/40 tracking-wider">
               <span>MISA COMPLIANT</span>
               <span>·</span>
               <span>VISION 2030 ALIGNED</span>
