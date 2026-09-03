@@ -59,7 +59,7 @@ export const KeyholePortal: React.FC<KeyholePortalProps> = ({ onExploreClick }) 
   return (
     <div
       ref={containerRef}
-      className="relative w-full max-w-[530px] h-[480px] sm:h-[530px] lg:h-[560px] mx-auto flex items-center justify-center select-none"
+      className="relative w-full max-w-[460px] h-[400px] sm:h-[440px] lg:h-[460px] mx-auto flex items-center justify-center select-none"
       style={{ perspective: 1000 }}
     >
       {/* 8. FLOATING AMBIENT EMERALD/GOLD LIGHT BLOOM */}
@@ -94,7 +94,7 @@ export const KeyholePortal: React.FC<KeyholePortalProps> = ({ onExploreClick }) 
         style={{ transform: `translate(${orbitShiftX}px, ${orbitShiftY}px)` }}
       >
         {/* Outer Ring with degree indices - 20s rotation */}
-        <div className="absolute w-[370px] h-[370px] sm:w-[430px] sm:h-[430px] rounded-full border border-[#c8a45d]/20 animate-orbit-20">
+        <div className="absolute w-[320px] h-[320px] sm:w-[370px] sm:h-[370px] rounded-full border border-[#c8a45d]/20 animate-orbit-20">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-[#c8a45d] shadow-[0_0_8px_#c8a45d]" />
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#c8a45d]/60" />
           <div className="absolute top-1/2 left-0 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[#0b8f5a]" />
@@ -102,7 +102,7 @@ export const KeyholePortal: React.FC<KeyholePortalProps> = ({ onExploreClick }) 
         </div>
 
         {/* Mid Ring with dashed segments & coordinates - 16s reverse rotation */}
-        <div className="absolute w-[310px] h-[310px] sm:w-[355px] sm:h-[355px] rounded-full border border-dashed border-[#0b8f5a]/35 animate-orbit-16-reverse">
+        <div className="absolute w-[268px] h-[268px] sm:w-[305px] sm:h-[305px] rounded-full border border-dashed border-[#0b8f5a]/35 animate-orbit-16-reverse">
           <div className="absolute -top-2 left-1/2 -translate-x-1/2 text-[8px] font-mono-tech text-[#c8a45d] bg-[#05080c] px-1.5 tracking-widest border border-[#c8a45d]/30 rounded">
             24.7136°N · 46.6753°E
           </div>
@@ -112,7 +112,7 @@ export const KeyholePortal: React.FC<KeyholePortalProps> = ({ onExploreClick }) 
         </div>
 
         {/* Fine Inner Ring - 12s rotation with orbiting celestial beacon */}
-        <div className="absolute w-[250px] h-[250px] sm:w-[285px] sm:h-[285px] rounded-full border border-[#f4f1e8]/15 animate-orbit-12">
+        <div className="absolute w-[216px] h-[216px] sm:w-[245px] sm:h-[245px] rounded-full border border-[#f4f1e8]/15 animate-orbit-12">
           <div className="absolute top-1/2 -right-2 -translate-y-1/2 w-2.5 h-2.5 rounded-full border border-[#c8a45d] bg-[#05080c] flex items-center justify-center">
             <span className="w-1 h-1 rounded-full bg-[#0b8f5a] animate-ping" />
           </div>
@@ -239,7 +239,7 @@ export const KeyholePortal: React.FC<KeyholePortalProps> = ({ onExploreClick }) 
           }`}
         >
           {/* Keyhole Structural Housing */}
-          <div className="relative w-[245px] h-[345px] sm:w-[265px] sm:h-[375px] lg:w-[280px] lg:h-[395px] rounded-[36px] bg-[#05080c] overflow-hidden">
+          <div className="relative w-[210px] h-[300px] sm:w-[230px] sm:h-[325px] lg:w-[245px] lg:h-[345px] rounded-[36px] bg-[#05080c] overflow-hidden">
             
             {/* Dynamic Specular Glass Reflection that shifts with cursor */}
             <div
@@ -524,7 +524,7 @@ export const KeyholePortal: React.FC<KeyholePortalProps> = ({ onExploreClick }) 
         </div>
 
         {/* Small Precision Coordinates Tag beneath Portal */}
-        <div className="mt-3 flex items-center justify-between px-2 text-[9px] font-mono-tech text-[#c8a45d]/70 tracking-wider">
+        <div className="mt-2 flex items-center justify-between px-2 text-[9px] font-mono-tech text-[#c8a45d]/70 tracking-wider">
           <span className="flex items-center gap-1">
             <MapPin className="w-2.5 h-2.5 text-[#0b8f5a]" /> KSA KINGDOM ACCESS
           </span>
