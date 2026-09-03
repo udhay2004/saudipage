@@ -31,24 +31,24 @@ export const Footer: React.FC = () => {
           {/* Regional Advisory Hubs */}
           <div className="md:col-span-4 space-y-3">
             <div className="text-[10px] font-mono-tech uppercase tracking-[0.25em] text-[#c8a45d]">
-              Regional Hubs & Desks
+              Regional Hubs
             </div>
-            <div className="grid grid-cols-2 gap-2 text-xs font-mono-tech text-[#f4f1e8]/75">
-              <div>
-                <span className="text-white font-medium block">RIYADH</span>
-                <span className="text-[10px] text-white/40">King Fahd Road, KAFD</span>
+            <div className="grid grid-cols-2 gap-3 text-xs font-mono-tech text-[#f4f1e8]/80">
+              <div className="p-2 rounded bg-white/[0.03] border border-white/5">
+                <span className="text-white font-medium block">UK</span>
+                <span className="text-[10px] text-white/40">United Kingdom</span>
               </div>
-              <div>
-                <span className="text-white font-medium block">MUMBAI</span>
-                <span className="text-[10px] text-white/40">Bandra Kurla Complex</span>
+              <div className="p-2 rounded bg-white/[0.03] border border-white/5">
+                <span className="text-white font-medium block">USA</span>
+                <span className="text-[10px] text-white/40">United States</span>
               </div>
-              <div>
-                <span className="text-white font-medium block">DUBAI</span>
-                <span className="text-[10px] text-white/40">DIFC Gate Precinct</span>
+              <div className="p-2 rounded bg-white/[0.03] border border-white/5">
+                <span className="text-white font-medium block">INDIA (NOIDA)</span>
+                <span className="text-[10px] text-white/40">National Capital Region</span>
               </div>
-              <div>
-                <span className="text-white font-medium block">SINGAPORE</span>
-                <span className="text-[10px] text-white/40">Marina Bay Financial</span>
+              <div className="p-2 rounded bg-white/[0.03] border border-white/5">
+                <span className="text-white font-medium block">INDIA (MUMBAI)</span>
+                <span className="text-[10px] text-white/40">Financial Capital</span>
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
         {/* Legal Disclaimer & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] font-mono-tech text-white/40">
           <div>
-            © 2026 Comply Globally Advisory Group. All Rights Reserved. Not an official government body of the Kingdom of Saudi Arabia.
+            © 2026 Comply Globally. All Rights Reserved. Not an official government body of the Kingdom of Saudi Arabia.
           </div>
           <div className="flex items-center gap-6">
             <span>MISA & CR Advisory</span>

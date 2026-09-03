@@ -38,10 +38,6 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenReservation }) => 
             <span className="font-display tracking-[0.25em] text-xs sm:text-sm font-semibold text-[#f4f1e8] group-hover:text-white transition-colors">
               COMPLY GLOBALLY
             </span>
-            <span className="text-[9px] tracking-[0.3em] uppercase text-[#c8a45d]/90 font-mono-tech flex items-center gap-1">
-              <span className="w-1 h-1 rounded-full bg-[#0b8f5a] animate-pulse" />
-              Riyadh · Global Desk
-            </span>
           </div>
         </a>
 

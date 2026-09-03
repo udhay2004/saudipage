@@ -49,11 +49,11 @@ export const SpeakerProfile: React.FC = () => {
                     <div className="font-editorial text-2xl sm:text-3xl text-[#f4f1e8]">
                       Dr. Anil Gupta
                     </div>
-                    <div className="text-xs font-mono-tech text-[#f4f1e8]/70 tracking-wide mt-1">
-                      Senior Partner & GCC Expansion Lead
+                    <div className="text-xs font-mono-tech text-[#f4f1e8]/85 tracking-wide mt-1">
+                      Chairman, Business Coach & Advisor
                     </div>
-                    <div className="text-[11px] font-mono-tech text-[#c8a45d]/80 mt-0.5">
-                      Comply Globally · Riyadh & Mumbai
+                    <div className="text-[11px] font-mono-tech text-[#c8a45d]/85 mt-0.5">
+                      Comply Globally
                     </div>
                   </div>
                 </div>
