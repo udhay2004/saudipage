@@ -27,7 +27,7 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({ isOpen, onCl
   };
 
   const handleCopyLink = () => {
-    navigator.clipboard.writeText('https://complyglobally.com/briefing/key-to-saudi-2026');
+    navigator.clipboard.writeText('https://complyglobally.com/briefing/gateway-to-saudi-2026');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -36,14 +36,14 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({ isOpen, onCl
     const icsContent = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
-      'PRODID:-//Comply Globally//Key to Saudi Arabia Webinar//EN',
+      'PRODID:-//Comply Globally//Gateway to Business Expansion in Saudi Arabia Webinar//EN',
       'BEGIN:VEVENT',
       'UID:ksa-pass-20260926@complyglobally.com',
       'DTSTAMP:20260901T000000Z',
       'DTSTART:20260926T100000Z',
       'DTEND:20260926T113000Z',
-      'SUMMARY:Comply Globally: Your Key to Saudi Arabia Webinar',
-      'DESCRIPTION:Executive briefing with Dr. Anil Gupta. Reserved for ' + (formData.fullName || 'Executive Attendee'),
+      'SUMMARY:Comply Globally: Your Gateway to Business Expansion in Saudi Arabia Webinar',
+      'DESCRIPTION:Executive briefing on business expansion in Saudi Arabia with Dr. Anil Gupta. Reserved for ' + (formData.fullName || 'Executive Attendee'),
       'LOCATION:Online Executive Briefing Room',
       'STATUS:CONFIRMED',
       'END:VEVENT',

@@ -30,8 +30,8 @@ export default function App() {
     setReservationOpen(false);
   };
 
-  const handleScrollToWhySaudi = () => {
-    const section = document.getElementById('why-saudi');
+  const handleScrollToAgenda = () => {
+    const section = document.getElementById('agenda');
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -54,25 +54,25 @@ export default function App() {
 
       {/* Main Narrative Experience */}
       <main>
-        {/* Section 1: Hero Composition (40% Left / 60% Right) */}
+        {/* Section 0: Hero Composition (40% Left / 60% Right) */}
         <HeroSection
           onOpenReservation={handleOpenReservation}
-          onExploreClick={handleScrollToWhySaudi}
+          onExploreClick={handleScrollToAgenda}
         />
 
-        {/* Section 2: Enter Saudi Arabia (Portal Transformation & Economic Horizon) */}
-        <EnterSaudiSection />
-
-        {/* Section 3: The Saudi Business Landscape (MISA, Company Formation, CR, Tax, SBC) */}
-        <BusinessLandscapeSection />
-
-        {/* Section 4: Why This Session Matters (Entry, Structure, Compliance, Growth) */}
-        <PillarsSection />
-
-        {/* Section 5: The Session (26 Sep 2026, 3:30 PM IST, Live Online, Free Access) */}
+        {/* Section 1: The Session (26 Sep 2026, 3:30 PM IST, Live Online, Free Access) */}
         <SessionDetailsSection onOpenReservation={handleOpenReservation} />
 
-        {/* Host Section: Dr. Anil Gupta Profile */}
+        {/* Section 2: Webinar Agenda & Key Takeaways (Entry, Structure, Compliance, Growth) */}
+        <PillarsSection />
+
+        {/* Section 3: Enter Saudi Arabia (Portal Transformation & Indo-Saudi Corridor) */}
+        <EnterSaudiSection />
+
+        {/* Section 4: The Saudi Business Landscape (MISA, Company Formation, CR, Tax, SBC) */}
+        <BusinessLandscapeSection />
+
+        {/* Section 5: Lead Host & Speaker Profile (Dr. Anil Gupta) */}
         <SpeakerProfile />
 
         {/* Final CTA Section: Unlock the Opportunity */}

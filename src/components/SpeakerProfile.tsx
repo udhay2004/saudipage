@@ -10,7 +10,7 @@ export const SpeakerProfile: React.FC = () => {
         <div className="flex items-center gap-3 mb-6">
           <span className="w-6 h-px bg-[#c8a45d]" />
           <span className="text-[10px] font-mono-tech tracking-[0.3em] uppercase text-[#c8a45d]">
-            SESSION HOST & LEAD STRATEGIST
+            SECTION 05 · SESSION HOST & LEAD STRATEGIST
           </span>
         </div>
 

@@ -42,12 +42,18 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenReservation }) => 
         </a>
 
         {/* Desktop Links */}
-        <nav className="hidden md:flex items-center gap-7 lg:gap-9">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           <a
             href="#session"
             className="text-[12px] tracking-[0.2em] uppercase text-[#f4f1e8]/70 hover:text-[#c8a45d] transition-colors duration-200"
           >
             The Session
+          </a>
+          <a
+            href="#agenda"
+            className="text-[12px] tracking-[0.2em] uppercase text-[#f4f1e8]/70 hover:text-[#c8a45d] transition-colors duration-200"
+          >
+            Agenda & Takeaways
           </a>
           <a
             href="#why-saudi"
@@ -99,6 +105,13 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenReservation }) => 
               className="text-xs tracking-[0.2em] uppercase text-[#f4f1e8]/80 py-2 border-b border-white/5"
             >
               The Session
+            </a>
+            <a
+              href="#agenda"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-xs tracking-[0.2em] uppercase text-[#f4f1e8]/80 py-2 border-b border-white/5"
+            >
+              Agenda & Takeaways
             </a>
             <a
               href="#why-saudi"

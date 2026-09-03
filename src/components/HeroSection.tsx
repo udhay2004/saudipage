@@ -50,8 +50,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Restrained Luxury Editorial Headline with subtle metallic shimmer */}
-            <h1 className="font-editorial text-4xl sm:text-5xl lg:text-[46px] font-normal leading-[1.08] tracking-tight text-[#f4f1e8] mb-4">
-              YOUR KEY TO <br />
+            <h1 className="font-editorial text-3xl sm:text-4xl lg:text-[42px] font-normal leading-[1.12] tracking-tight text-[#f4f1e8] mb-4">
+              YOUR GATEWAY TO <br />
+              BUSINESS EXPANSION IN <br />
               <span className="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-[#c8a45d] via-[#f4f1e8] to-[#c8a45d] animate-shimmer-text">
                 SAUDI ARABIA
               </span>
@@ -59,7 +60,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Short Supporting Message */}
             <p className="text-sm sm:text-base text-[#f4f1e8]/75 leading-relaxed font-light mb-5 max-w-md">
-              Practical, institutional guidance on entering, licensing, and establishing a lasting commercial presence in the Kingdom of Saudi Arabia.
+              Practical, institutional guidance on licensing, corporate structuring, and establishing a thriving, compliant enterprise in the Kingdom of Saudi Arabia.
             </p>
 
             {/* 3:30 DIAL & DATE/TIME MECHANISM */}

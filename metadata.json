@@ -1,6 +1,8 @@
 {
-  "name": "Comply Globally — Key to Saudi Arabia",
-  "description": "Exclusive executive webinar on entering and establishing a business presence in Saudi Arabia. 26 September 2026, 3:30 PM IST.",
+  "name": "Comply Globally — Gateway to Business Expansion in Saudi Arabia",
+  "description": "Exclusive executive webinar on your gateway to business expansion, company formation, and establishing a commercial presence in Saudi Arabia. 26 September 2026, 3:30 PM IST.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

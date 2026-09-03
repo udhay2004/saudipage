@@ -103,7 +103,7 @@ export const BusinessLandscapeSection: React.FC = () => {
             <div className="inline-flex items-center gap-2 mb-3">
               <span className="w-2.5 h-px bg-[#0b8f5a]" />
               <span className="text-[10px] tracking-[0.3em] uppercase text-[#0b8f5a] font-mono-tech">
-                SECTION 03 · STATUTORY ROADMAP
+                SECTION 04 · STATUTORY ROADMAP
               </span>
             </div>
             <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-[#f4f1e8] font-normal leading-tight">

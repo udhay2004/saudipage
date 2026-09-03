@@ -26,7 +26,7 @@ export const EnterSaudiSection: React.FC = () => {
             <div className="inline-flex items-center gap-2 mb-3">
               <KeyRound className="w-3.5 h-3.5 text-[#c8a45d]" />
               <span className="text-[10px] tracking-[0.3em] uppercase text-[#c8a45d] font-mono-tech">
-                SECTION 02 · THE KEY TURNS
+                SECTION 03 · THE EXPANSION HORIZON
               </span>
             </div>
             <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-[#f4f1e8] font-normal leading-tight">
@@ -35,7 +35,7 @@ export const EnterSaudiSection: React.FC = () => {
           </div>
 
           <p className="max-w-md text-sm text-[#f4f1e8]/65 font-light leading-relaxed">
-            Saudi Arabia is experiencing the most profound economic modernization in modern history. The key is knowing which statutory doors to unlock first.
+            Saudi Arabia is experiencing the most profound economic modernization in modern history. The gateway to sustainable expansion begins with knowing which statutory pathways to navigate first.
           </p>
         </div>
 
@@ -180,31 +180,31 @@ export const EnterSaudiSection: React.FC = () => {
                     India-Saudi Strategic Partnership
                   </h3>
                   <p className="text-xs text-[#f4f1e8]/70 leading-relaxed font-light">
-                    Trade volume surpassing $52 Billion. Indian technology, engineering, EPC, healthcare, and professional services are prioritized across government and private tenders.
+                    Annual trade volume surpassing $52 Billion. Saudi giga-projects and public tenders actively prioritize Indian technology, engineering, EPC, healthcare, manufacturing, and advisory leaders.
                   </p>
                 </div>
 
                 <div className="space-y-3">
                   <div className="text-[11px] font-mono-tech text-[#0b8f5a] tracking-wider uppercase">
-                    Execution Reality
+                    Cross-Border Structuring
                   </div>
                   <h3 className="font-editorial text-2xl text-[#f4f1e8]">
-                    Avoid Common Pitfalls
+                    DTAA & Profit Repatriation
                   </h3>
                   <p className="text-xs text-[#f4f1e8]/70 leading-relaxed font-light">
-                    Understanding the nuanced distinction between service, industrial, and trading licenses to prevent costly regulatory delays or corporate restructuring down the road.
+                    Leveraging the India-Saudi Double Taxation Avoidance Agreement (DTAA) for optimal withholding tax mitigation, dividend repatriation, and cross-border IP licensing between Indian and Saudi entities.
                   </p>
                 </div>
 
                 <div className="space-y-3">
                   <div className="text-[11px] font-mono-tech text-[#c8a45d] tracking-wider uppercase">
-                    Direct Access
+                    Regulatory Alignment
                   </div>
                   <h3 className="font-editorial text-2xl text-[#f4f1e8]">
-                    The Webinar Agenda
+                    RBI ODI & Apostille Legalization
                   </h3>
                   <p className="text-xs text-[#f4f1e8]/70 leading-relaxed font-light">
-                    Learn the exact sequential roadmap from Indian entity board resolutions to full operational readiness in Riyadh within 30 to 45 business days.
+                    Navigating Reserve Bank of India (RBI) Overseas Direct Investment (ODI) compliance, FEMA regulations, and Indian MEA apostille certification for seamless Saudi Ministry of Investment (MISA) clearance.
                   </p>
                 </div>
               </div>

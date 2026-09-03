@@ -59,7 +59,7 @@ export const PillarsSection: React.FC = () => {
   const currentPillar = pillars.find((p) => p.id === activePillar) || pillars[0];
 
   return (
-    <section className="relative py-16 lg:py-20 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
+    <section id="agenda" className="relative py-16 lg:py-20 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
       {/* Dark Architectural Grid Map Backdrop */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -92,14 +92,14 @@ export const PillarsSection: React.FC = () => {
           <div className="inline-flex items-center gap-2 mb-3">
             <Compass className="w-3.5 h-3.5 text-[#c8a45d]" />
             <span className="text-[10px] tracking-[0.3em] uppercase text-[#c8a45d] font-mono-tech">
-              SECTION 04 · EXECUTIVE CURRICULUM
+              SECTION 02 · WEBINAR AGENDA & KEY TAKEAWAYS
             </span>
           </div>
           <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-[#f4f1e8] font-normal leading-tight">
-            WHY THIS SESSION MATTERS
+            WEBINAR AGENDA & KEY TAKEAWAYS
           </h2>
           <p className="mt-4 text-sm text-[#f4f1e8]/65 font-light leading-relaxed">
-            Four interconnected strategic disciplines. Every minute of this executive webinar is calibrated to deliver actionable tactical advantage.
+            Four interconnected strategic disciplines. Every minute of this executive webinar is calibrated to deliver actionable tactical advantage, statutory clarity, and execution templates.
           </p>
         </div>
 
@@ -180,6 +180,39 @@ export const PillarsSection: React.FC = () => {
               </div>
             </div>
 
+          </div>
+        </div>
+
+        {/* Executive Key Takeaways Summary Banner */}
+        <div className="mt-10 p-6 sm:p-8 rounded-xl border border-[#c8a45d]/20 bg-[#071a2b]/40 backdrop-blur-md">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div>
+              <div className="text-[10px] font-mono-tech tracking-[0.3em] uppercase text-[#c8a45d] mb-1.5">
+                EXECUTIVE DELIVERABLES
+              </div>
+              <h3 className="font-editorial text-2xl text-[#f4f1e8] font-normal">
+                What You Walk Away With
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 flex-1">
+              <div className="p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1">
+                <span className="text-[10px] font-mono-tech text-[#c8a45d] block">01 · CHECKLIST</span>
+                <span className="text-xs text-[#f4f1e8]/90 font-medium block">MISA & CR Fast-Track Filing Checklist</span>
+              </div>
+              <div className="p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1">
+                <span className="text-[10px] font-mono-tech text-[#0b8f5a] block">02 · TEMPLATE</span>
+                <span className="text-xs text-[#f4f1e8]/90 font-medium block">Articles of Association (AoA) Structuring Model</span>
+              </div>
+              <div className="p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1">
+                <span className="text-[10px] font-mono-tech text-[#c8a45d] block">03 · COMPLIANCE</span>
+                <span className="text-xs text-[#f4f1e8]/90 font-medium block">ZATCA, Fatoora & Saudization Calendar</span>
+              </div>
+              <div className="p-3.5 rounded bg-[#05080c]/60 border border-white/5 space-y-1">
+                <span className="text-[10px] font-mono-tech text-[#0b8f5a] block">04 · DIRECT ACCESS</span>
+                <span className="text-xs text-[#f4f1e8]/90 font-medium block">Live Q&A with Dr. Anil Gupta</span>
+              </div>
+            </div>
           </div>
         </div>
 
