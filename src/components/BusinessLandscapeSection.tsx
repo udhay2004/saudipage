@@ -89,7 +89,7 @@ export const BusinessLandscapeSection: React.FC = () => {
   ];
 
   return (
-    <section id="landscape" className="relative py-24 lg:py-32 bg-[#071a2b]/30 border-t border-[#c8a45d]/15 overflow-hidden">
+    <section id="landscape" className="relative py-16 lg:py-20 bg-[#071a2b]/30 border-t border-[#c8a45d]/15 overflow-hidden">
       {/* Precision grid accents */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
         <div className="h-full w-full bg-[radial-gradient(#c8a45d_1px,transparent_1px)] [background-size:24px_24px]" />
