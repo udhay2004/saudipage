@@ -7,7 +7,7 @@ interface FinalCtaSectionProps {
 
 export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenReservation }) => {
   return (
-    <section className="relative py-28 lg:py-36 bg-[#05080c] border-t border-[#c8a45d]/20 overflow-hidden text-center">
+    <section className="relative py-20 lg:py-24 bg-[#05080c] border-t border-[#c8a45d]/20 overflow-hidden text-center">
       
       {/* Background Portal Glow & Keyhole Silhouette */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
