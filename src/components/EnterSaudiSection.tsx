@@ -6,7 +6,7 @@ export const EnterSaudiSection: React.FC = () => {
   const [activeLens, setActiveLens] = useState<'transformation' | 'capital' | 'corridor'>('transformation');
 
   return (
-    <section id="why-saudi" className="relative py-24 lg:py-32 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
+    <section id="why-saudi" className="relative py-16 lg:py-20 bg-[#05080c] border-t border-[#c8a45d]/15 overflow-hidden">
       {/* Background Architectural Grid Lines */}
       <div className="absolute inset-0 pointer-events-none opacity-15">
         <div className="max-w-7xl mx-auto h-full border-x border-[#c8a45d]/20 grid grid-cols-6">
